@@ -30,11 +30,12 @@
         const asBinary = BigInt(vidId).toString(2);
         const first31Chars = asBinary.slice(0, 31);
         const timestamp = parseInt(first31Chars, 2);
-        return timestamp;
+        const timestampnew = timestamp - 5;
+        return timestampnew;
       }
 
       function unixTimestampToHumanDate(timestamp) {
-        const milliseconds = timestamp * 1000;
+        const milliseconds = timestampnew * 1000;
         const dateObject = new Date(milliseconds);
         const humanDateFormat = dateObject.toUTCString()+" (UTC)";
         return humanDateFormat;
