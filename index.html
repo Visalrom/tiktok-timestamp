@@ -34,7 +34,7 @@
       }
 
       function unixTimestampToHumanDate(timestamp) {
-        const milliseconds = (timestamp - 3600) * 1000;
+        const milliseconds = (timestamp - 14400) * 1000;
         const dateObject = new Date(milliseconds);
         const humanDateFormat = dateObject.toUTCString();
         return humanDateFormat;
