@@ -36,7 +36,7 @@
       function unixTimestampToHumanDate(timestamp) {
         const milliseconds = (timestamp + 25200) * 1000;
         const dateObject = new Date(milliseconds);
-        const humanDateFormat = dateObject.toUTCString()+"Phnom Penh Time";
+        const humanDateFormat = dateObject.toUTCString() + " Phnom Penh Time";
         return humanDateFormat;
       }
 
